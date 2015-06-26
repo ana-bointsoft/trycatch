@@ -11,7 +11,7 @@ if($_POST['action']!="edit")
     ->update($_POST)
     ->write();
     // Redirect back to home
-    header('Location: /csvmanager/list.php');
+    header('Location: /trycatch/csvmanager/list.php');
     exit;
 }
 // Not POST lets crUd.

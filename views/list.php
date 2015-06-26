@@ -19,7 +19,7 @@
                         <td><?php echo $contact['address']; ?></td>
                         <td>
                         <div style="float:left">
-                              <form role="form" action="/csvmanager/update.php" method="post" enctype='application/json' > 
+                              <form role="form" action="/trycatch/csvmanager/update.php" method="post" enctype='application/json' > 
                                   <input type="hidden" value="<?php echo utf8_encode(utf8_decode($contact['name']));?>"         name="name" id="name"/>
                                   <input type="hidden" value="<?php echo utf8_decode($contact['telephone']); ?>"   name="telephone" id="telephone"/>
                                   <input type="hidden" value="<?php echo htmlspecialchars(($contact['address']),ENT_COMPAT,"UTF-8"); ?>"     name="address" id="address"/>
@@ -28,7 +28,7 @@
                                   <button type="submit" class="btn btn-default">Edit</button>
                               </form></div>
                                 <div style="float:left">
-                              <form role="form" action="/csvmanager/delete.php" method="post" enctype='application/json' > 
+                              <form role="form" action="/trycatch/csvmanager/delete.php" method="post" enctype='application/json' > 
                                   <input type="hidden" value="<?php echo $i; ?>" name="id" id="id" />
                                   <input type="hidden" value="delete"            name="action" id="action" />
                                   <button type="submit" class="btn btn-default" >Delete</button>

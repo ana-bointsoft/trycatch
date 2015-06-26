@@ -7,5 +7,5 @@ csvmanager::getInstance(__DIR__ . "/../address/example.csv")
 ->delete($_POST['id'])
 ->write();
     // Redirect back to home
-    header('Location: /csvmanager/list.php');
+    header('Location: /trycatch/csvmanager/list.php');
     exit;
